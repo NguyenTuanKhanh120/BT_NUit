@@ -1,5 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using BankAccountNS; // để dùng class BankAccount
+using BankAccountNS; 
 
 namespace BankTests
 {
@@ -10,9 +10,9 @@ namespace BankTests
         public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
         {
             // Arrange
-            double beginningBalance = 11.99;
-            double debitAmount = -100.00;
-            BankAccount account = new BankAccount("Mr. Bryan Walton", beginningBalance);
+            double beginningBalance = 15.97;
+            double debitAmount = -150.00;
+            BankAccount account = new BankAccount("Mr.Ben", beginningBalance);
 
             // Act and Assert
             Assert.ThrowsException<ArgumentOutOfRangeException>(() => account.Debit(debitAmount));
@@ -22,9 +22,9 @@ namespace BankTests
         public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
         {
             // Arrange
-            double beginningBalance = 11.99;
-            double debitAmount = 20.0;
-            BankAccount account = new BankAccount("Mr. Bryan Walton", beginningBalance);
+            double beginningBalance = 12.59;
+            double debitAmount = 23.0;
+            BankAccount account = new BankAccount("Mr.Ben", beginningBalance);
 
             // Act
             try

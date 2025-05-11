@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DAI PC\\source\\repos\\Bank\\BANK\\BANK.csproj": {}
+    "D:\\Đảm_bảo_chất_lượng_phần_mềm\\Nuit\\BANK\\BANK.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DAI PC\\source\\repos\\Bank\\BANK\\BANK.csproj": {
+    "D:\\Đảm_bảo_chất_lượng_phần_mềm\\Nuit\\BANK\\BANK.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DAI PC\\source\\repos\\Bank\\BANK\\BANK.csproj",
+        "projectUniqueName": "D:\\Đảm_bảo_chất_lượng_phần_mềm\\Nuit\\BANK\\BANK.csproj",
         "projectName": "BANK",
-        "projectPath": "C:\\Users\\DAI PC\\source\\repos\\Bank\\BANK\\BANK.csproj",
-        "packagesPath": "C:\\Users\\DAI PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DAI PC\\source\\repos\\BANK\\BANK\\obj\\",
+        "projectPath": "D:\\Đảm_bảo_chất_lượng_phần_mềm\\Nuit\\BANK\\BANK.csproj",
+        "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
+        "outputPath": "D:\\Đảm_bảo_chất_lượng_phần_mềm\\Nuit\\BANK\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\APP_HocTap\\VisualStudio\\SDK\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\DAI PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nguye\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,11 +43,26 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.13.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[4.3.2, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -61,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
